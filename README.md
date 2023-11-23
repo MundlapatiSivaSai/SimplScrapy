@@ -20,3 +20,6 @@ python scraper.py
 ## Note
 - Always respect the target website's terms of service and robots.txt file.
 - Intended for educational purposes and simple projects.
+
+## Check this project live demo
+Link : https://simplscrappy.onrender.com/
