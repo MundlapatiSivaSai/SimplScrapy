@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scraping Results - SimplScrapy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>Scraping Results</h1>
+    </div>
+    <div class="container">
+        {% if data %}
+            <ul class="result-list">
+                {% for item in data %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No data found. Please try again with a different URL or selector.</p>
+        {% endif %}
+        <a href="{{ url_for('index') }}">Back to Home</a>
+    </div>
+</body>
+</html>
